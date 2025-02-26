@@ -1,0 +1,21 @@
+.aboutsection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    color: var(--primary-color-light);
+}
+
+.aboutsection-container>:first-child {
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+}
+
+.aboutsection-container>:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+}

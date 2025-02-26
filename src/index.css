@@ -1,0 +1,38 @@
+:root {
+  --primary-color-dark: hsl(148, 23%, 58%);
+  --primary-color-light: hsl(148, 47%, 90%);
+
+  --secundary-color-dark: hsl(180, 3%, 7%);
+  --secundary-color-light: hsl(180, 6%, 21%);
+
+  --tertiary-color: hsl(180, 4%, 33%);
+
+  --primary-color-light-op: hsla(148, 47%, 90%, 0.8);
+
+  --h1-size: 32px;
+  --h2-size: 24px;
+  --h3-size: 16px;
+
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: inherit;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color-dark) var(--secundary-color-dark);
+}
+
+html {
+  height: 100vh;
+
+  background-color: var(--secundary-color-dark);
+  color: var(--primary-color-dark);
+  font-family: 'Dosis', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

@@ -1,0 +1,47 @@
+.inputsection-container {
+    display: flex;
+    gap: 16px;
+}
+
+.inputsection-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputsection-btn {
+    padding: 4px 16px;
+
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color-dark);
+    color: var(--secundary-color-dark);
+    font-size: var(--h2-size);
+    font-weight: 600;
+}
+
+.inputsection-btn:hover {
+    background-color: var(--primary-color-light-op);
+    cursor: pointer;
+}
+
+.inputsection-btn:disabled {
+    background-color: var(--tertiary-color);
+    cursor: default;
+}
+
+.inputsection-screen {
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+.inputsection-screen-webcam {
+    outline: solid 2px var(--primary-color-dark);
+}
+
+.inputsection-screen-image {
+    outline: dashed 2px var(--primary-color-dark);
+}
