@@ -1,8 +1,8 @@
 /* localhost*/
-// const BASE_URL = 'http://127.0.0.1:8000/image'
+const BASE_URL = 'http://127.0.0.1:8000/image'
 
 /* vercel */
-const BASE_URL = 'https://ocr-backend-eight.vercel.app/image'
+// const BASE_URL = '/image'
 const EXTRACT_TEXT_URL = `${BASE_URL}/extract_text`
 
 export const extractText = async (data) => {
