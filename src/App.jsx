@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   const [showModal, setShowModal] = useState(true)
-  const [output, setOutput] = useState('Output text...')
+  const [output, setOutput] = useState('')
   const [loading, setLoading] = useState(false)
 
   return (
