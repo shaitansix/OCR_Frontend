@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useRef } from 'react'
 import Webcam from 'react-webcam'
+import ButtonCustom from '@/components/UI/ButtonCustom'
 import './WebcamComponent.css'
 
 const WebcamComponent = ({ setImgUrl }) => {
@@ -38,25 +40,14 @@ const WebcamComponent = ({ setImgUrl }) => {
                 screenshotFormat = 'image/jpeg'
                 videoConstraints = {videoConstraints}>
             { ({ getScreenshot }) => (
-                <button className = 'webcamcomponent-btn' 
-                        onClick = {() => handleCapture(getScreenshot)} 
-                        ref = {btnRef}>
-                    <div className = 'webcamcomponent-btn-text'>
-                        Capture
-                        <BorderElement className = {'webcamcomponent-border-top_left'} />
-                        <BorderElement className = {'webcamcomponent-border-top_right'} />
-                        <BorderElement className = {'webcamcomponent-border-bottom_left'} />
-                        <BorderElement className = {'webcamcomponent-border-bottom_right'} />
-                    </div>
-                </button>
+                <ButtonCustom className = 'webcamcomponent-btn' 
+                              variant = 'capture' 
+                              text = 'Capture' 
+                              width = '98px' 
+                              onClick = {() => handleCapture(getScreenshot)}
+                              btnRef = {btnRef} />
             ) }
         </Webcam>
-    )
-}
-
-const BorderElement = ({ className }) => {
-    return (
-        <div className = {className} />
     )
 }
 

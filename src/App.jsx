@@ -9,14 +9,15 @@ import './App.css'
 function App() {
   const [showModal, setShowModal] = useState(true)
   const [output, setOutput] = useState('Output text...')
+  const [loading, setLoading] = useState(false)
 
   return (
     <main className = 'app-wrapper'>
       <section className = 'app-container'>
         <MainLayout>
           <AboutSection />
-          <InputSection setOutput = {setOutput} />
-          <OutputSection output = {output} />
+          <InputSection setOutput = {setOutput} loading = {loading} setLoading = {setLoading} />
+          <OutputSection output = {output} loading = {loading} />
         </MainLayout>
 
         { showModal && <Modal title = 'Camera Mode' 

@@ -1,5 +1,6 @@
 :root {
   --primary-color-dark: hsl(148, 23%, 58%);
+  --primary-color: hsl(148, 64%, 79%);
   --primary-color-light: hsl(148, 47%, 90%);
 
   --secundary-color-dark: hsl(180, 3%, 7%);
@@ -7,7 +8,7 @@
 
   --tertiary-color: hsl(180, 4%, 33%);
 
-  --primary-color-light-op: hsla(148, 47%, 90%, 0.8);
+  --primary-color-dark-op: hsla(148, 23%, 58%, 0.2);
 
   --h1-size: 32px;
   --h2-size: 24px;

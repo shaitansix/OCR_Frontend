@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import ButtonCustom from '@/components/UI/ButtonCustom'
 import './styles/Modal.css'
 
 const Modal = ({ title, body, textBtn, setShowModal }) => {
@@ -9,9 +10,10 @@ const Modal = ({ title, body, textBtn, setShowModal }) => {
                     <span className = 'modal-title'>{title}</span>
                     <span className = 'modal-body'>{body}</span>
                 </span>
-                <button className = 'modal-btn' onClick = {() => setShowModal()}>
-                    {textBtn}
-                </button>
+
+                <ButtonCustom variant = 'capture' 
+                              text = {textBtn} 
+                              onClick = {() => setShowModal()} />
             </article>
         </section>
     )

@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
 import IconCustom from '@/components/UI/IconCustom'
+import Loader from '@/components/UI/Loader'
 import './OutputSection.css'
 
-const OutputSection = ({ output }) => {
+const OutputSection = ({ output, loading }) => {
     const [textBtn, setTextBtn] = useState('Copy')
 
     const handleCopy = async () => {
@@ -29,9 +30,11 @@ const OutputSection = ({ output }) => {
                     </button>
                 </span>
 
+                { loading ? 
+                <Loader /> :  
                 <div className = 'outputsection-output'>
                     { output === '' ? 'No text detected in the image.' : output }
-                </div>
+                </div> }
             </article>
         </section>
     )

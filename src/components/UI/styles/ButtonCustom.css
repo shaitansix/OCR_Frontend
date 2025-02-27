@@ -1,0 +1,84 @@
+.buttoncustom-container-variant_default, 
+.buttoncustom-container-variant_capture {
+    outline: none;
+    border: none;
+
+    font-weight: var(--h2-weight);
+}
+
+.buttoncustom-container-variant_default {
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    background-color: var(--primary-color-dark);
+    color: var(--secundary-color-dark);
+    font-size: var(--h3-size);
+}
+
+.buttoncustom-container-variant_default:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.buttoncustom-container-variant_default:disabled {
+    background-color: var(--tertiary-color);
+    cursor: default;
+}
+
+.buttoncustom-container-variant_capture {
+    color: var(--primary-color-light);
+    background-color: transparent;
+
+    font-size: var(--h2-size);
+    
+}
+
+.buttoncustom-container-variant_capture:hover {
+    background-color: var(--primary-color-dark-op);
+    cursor: pointer;
+}
+
+.buttoncustom-container-variant_capture>:first-child {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.buttoncustom-container-variant_capture-border-top_left, 
+.buttoncustom-container-variant_capture-border-top_right, 
+.buttoncustom-container-variant_capture-border-bottom_left, 
+.buttoncustom-container-variant_capture-border-bottom_right {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+}
+
+.buttoncustom-container-variant_capture-border-top_left {
+    top: 0;
+    left: 0;
+    border-top: solid 2px var(--primary-color-dark);
+    border-left: solid 2px var(--primary-color-dark);
+}
+
+.buttoncustom-container-variant_capture-border-top_right {
+    top: 0;
+    right: 0;
+    border-top: solid 2px var(--primary-color-dark);
+    border-right: solid 2px var(--primary-color-dark);
+}
+
+.buttoncustom-container-variant_capture-border-bottom_left {
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 2px var(--primary-color-dark);
+    border-left: solid 2px var(--primary-color-dark);
+}
+
+.buttoncustom-container-variant_capture-border-bottom_right {
+    bottom: 0;
+    right: 0;
+    border-bottom: solid 2px var(--primary-color-dark);
+    border-right: solid 2px var(--primary-color-dark);
+}
