@@ -1,6 +1,6 @@
 .webcamcomponent-btn {
     position: absolute;
     bottom: 16px;
-    left: calc((752px / 2) - (98px / 2));
+    left: calc(50% - (98px / 2));
     z-index: 1;
 }
